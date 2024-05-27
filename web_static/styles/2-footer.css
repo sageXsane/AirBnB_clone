@@ -1,0 +1,15 @@
+/* 2-footer.css
+    for styling footer elements
+*/
+
+    footer {
+        background-color: #00FF00; 
+        height: 60px; 
+        width: 100%; 
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        position: absolute;
+        }

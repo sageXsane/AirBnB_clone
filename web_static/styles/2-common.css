@@ -1,0 +1,9 @@
+/*  2-common.css
+    for global styling of 2-index.html
+    (e.g. body elements)
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
