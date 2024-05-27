@@ -1,0 +1,17 @@
+/*
+    3-footer.css file
+    Styling footer elements
+*/
+
+footer {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    position: absolute;
+}
