@@ -1,5 +1,5 @@
 /*
-    5-filters.css
+    4-filters.css
     Styling for the elements in the filters class
 */
 
@@ -10,39 +10,6 @@
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     position: relative;
-    /*arranging child elements*/
-    display: flex;
-    align-items: center;
-}
-
-/*
-    Styling amenities and location class elements
-    as well as their child elements
-*/
-.locations, .amenities {
-    height: 100%;
-    width: 25%;
-    padding: 0 0 0 40px;
-    /*aligning h3 and h4 (child elements)*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.locations {
-    border-right: 1px solid #DDDDDD;
-}
-
-.locations h3, .amenities h3 {
-    font-weight: 600;
-    margin: 0; /*attempt to bring h3 and h4 content closer*/
-}
-
-.locations h4, .amenities h4 {
-    font-weight: 400; /*Makes content appear less darker than corresponding h3 content*/  
-    font-size: 14px;
-    margin: 0;
 }
 
 /*
@@ -60,7 +27,8 @@
     transition: opacity 0.3s ease;
     position: absolute;
     right: 30px;
-    
+    align-self: center;
+    display: inline-block;
     
 }
 
@@ -70,23 +38,112 @@
 
 
 /*
-==============================================================================
-    Task 6 starts here
-==============================================================================
+    filters addition for task 5
 */
 
-
-.popover {
-    
+.filters .locations, .filters .amenities
+{
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    margin-left: 40px;
     position: relative;
+    /*border: 1px dotted black; testing*/
+}
+
+.filters .locations, .filters .amenities
+{
+    border-right: 1px solid #DDDDDD;
+}
+
+.filters .locations h3,
+.filters .amenities h3
+{
+    font-weight: 600;
+    /*border: 0.1px dotted black; testing*/
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.filters .locations h4,
+.filters .amenities h4
+{
+    font-weight: 400;
+    font-size: 14px;
+    /*border: 0.1px dotted black; testing*/
+    margin-top: -2px;
+    margin-right: 0;
+    margin-bottom: 0;
+
+}
+
+/*
+    Addition of classes for TASK 6
+*/
+
+.popover
+{
+    display: none;
     background-color: #FAFAFA;
     width: 100%;
     border: 1px solid #DDDDDD;
-    border-radius: 4px;    
+    border-radius: 4px;
+    margin-left: -40px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    list-style: none;
 }
 
-ul, li {
+.locations .popover
+{
+    top: 100%;
+}
+
+
+.amenities .popover
+{
+    top: calc(100% + 0px);
+}
+
+
+.filters ul.popover
+{
     list-style-type: none;
-    margin: 10px auto;
-
+    width: calc(100% + 40px);
+    /*border: 1px solid green;*/
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+ul.popover li
+{
+    list-style-type: none;
+    /*border: 1px dotted purple;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.locations ul.popover li h2
+{
+    /*border: 1px dotted red;*/
+    margin: 10px 20px 0 20px;
+    font-size: 16px;
+}
+
+
+
+.amenities ul.popover li
+{
+    margin-left: 40px;
+    list-style-type: none;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover
+{
+    display: block;
+}
+
