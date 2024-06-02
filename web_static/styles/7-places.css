@@ -1,0 +1,72 @@
+/*
+    7-places.css
+    Styling the places section of the webpage
+*/
+
+.places 
+{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0;
+    justify-items: center;
+}
+
+.places h1
+{
+    text-align: left;
+    grid-column: span 2;
+    font-size: 30px;
+    width: calc(100% - 20px)!important;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.places article
+{
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #FF5A5A;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.places article h2
+{
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0;
+
+}
+/*.places 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.places article
+{
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+.places h1
+{
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+
+}
+
+.places h2
+{
+    text-align: center;
+    font-size: 30px;
+}*/
